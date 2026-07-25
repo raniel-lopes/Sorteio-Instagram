@@ -1,0 +1,41 @@
+{
+  "url": "https://www.instagram.com/p/EXAMPLE123/",
+  "shortcode": "EXAMPLE123",
+  "owner": "exemplo_usuario",
+  "caption": "Post exemplo para teste do sorteio",
+  "likes": 150,
+  "comment_count": 5,
+  "extracted_at": "2025-09-20T18:30:00",
+  "comments": [
+    {
+      "username": "joao123",
+      "text": "Quero participar do sorteio!",
+      "created_at": "2025-09-20T10:00:00",
+      "likes": 5
+    },
+    {
+      "username": "maria_silva",
+      "text": "Adorei o post! Participando 🎉",
+      "created_at": "2025-09-20T10:15:00",
+      "likes": 3
+    },
+    {
+      "username": "carlos_01",
+      "text": "Boa sorte galera!",
+      "created_at": "2025-09-20T10:30:00",
+      "likes": 2
+    },
+    {
+      "username": "ana_123",
+      "text": "Muito legal! Quero ganhar 😍",
+      "created_at": "2025-09-20T11:00:00",
+      "likes": 7
+    },
+    {
+      "username": "joao123",
+      "text": "Compartilhando nos stories também!",
+      "created_at": "2025-09-20T11:30:00",
+      "likes": 1
+    }
+  ]
+}

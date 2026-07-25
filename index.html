@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio Instagram - Comentários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 Sorteio Instagram</h1>
+            <p>Sistema para sortear vencedores entre os comentários do Instagram</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <h2>📝 Cole os comentários aqui:</h2>
+                <textarea 
+                    id="commentsInput" 
+                    placeholder="Cole aqui os comentários do seu post do Instagram...
+Exemplo:
+@usuario1 Adorei o post!
+@usuario2 Quero participar!
+@usuario3 Muito legal, conta comigo!"
+                    rows="10"></textarea>
+
+                <div class="import-section">
+                    <p><strong>OU</strong></p>
+                    <div class="file-import">
+                        <label for="fileInput" class="file-label">
+                            📁 Importar arquivo de comentários
+                        </label>
+                        <input type="file" id="fileInput" accept=".txt,.json" style="display: none;">
+                        <div class="file-info" id="fileInfo" style="display: none;"></div>
+                        <small class="file-help">
+                            💡 Aceita arquivos .txt ou .json gerados pelo extrator Python
+                        </small>
+                    </div>
+                </div>
+                
+                <div class="options">
+                    <label>
+                        <input type="checkbox" id="allowDuplicates" checked>
+                        Permitir que o mesmo usuário apareça várias vezes (se comentou mais de uma vez)
+                    </label>
+                </div>
+
+                <button id="drawButton" onclick="performDraw()">
+                    🎲 Realizar Sorteio
+                </button>
+            </div>
+
+            <div class="participants-section">
+                <h3>👥 Participantes encontrados:</h3>
+                <div id="participantsList" class="participants-list">
+                    <p class="placeholder">Nenhum comentário analisado ainda...</p>
+                </div>
+            </div>
+
+            <div class="result-section" id="resultSection" style="display: none;">
+                <h2>🏆 Vencedor do Sorteio!</h2>
+                <div class="winner-display">
+                    <div class="winner-avatar">🎉</div>
+                    <div class="winner-username" id="winnerUsername">@usuario</div>
+                </div>
+                <button id="newDrawButton" onclick="performDraw()">
+                    🎲 Sortear Novamente
+                </button>
+            </div>
+        </main>
+
+        <footer>
+            <p>💡 <strong>Dica:</strong> Copie os comentários diretamente do Instagram e cole no campo acima. O sistema irá automaticamente identificar todos os @usernames!</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
